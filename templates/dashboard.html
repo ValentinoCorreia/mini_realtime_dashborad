@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block extra_header %}
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{% endblock %}
+
+{% block content %}
+    <main>
+        <canvas id="usage_chart"></canvas>
+    </main>
+    <script src="{{url_for('static', filename='js/charts/charts.js')}}"></script>
+{% endblock %}
