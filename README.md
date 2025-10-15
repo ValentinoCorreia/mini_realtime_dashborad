@@ -34,6 +34,10 @@ First setup the db:
     $ flask db migrate -m "first migrate"
     $ flask db upgrade
 
+Create your first user:
+
+    $ flask create_user --username <username> --password <user password>
+
 And now you can start the web server:
 
     $ flask run
